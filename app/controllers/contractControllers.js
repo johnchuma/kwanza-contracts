@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const app = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://api.kwanza.io",
 });
 
 export const getContract = async (uuid) => {
