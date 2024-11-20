@@ -40,7 +40,7 @@ const Page = async ({ params }) => {
         campaigns that will be done through Kwanza Media Trading Desk and
         annexed to this agreement accordingly as and when they happen.
       </p>
-      <p className="my-4 ">Influencers social media handle and/or profiles:</p>
+      <p className="my-4 ">Influencer's social media profiles:</p>
       <ul className=" w-3/12 space-y-1 list-decimal list-inside">
         {data.recipientSignature.handles.map((item) => {
           return (
