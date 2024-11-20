@@ -270,13 +270,13 @@ const Page = async ({ params }) => {
       <div className="mt-10 grid grid-cols-2 gap-6">
         {[
           { label: "Signed By", value: data.recipient, isSignature: false },
-          { label: "Signed By", value: "Kwanza HOS", isSignature: false },
+          { label: "Signed By", value: "Herman Mkamba", isSignature: false },
           {
             label: "Sign",
             value: data.recipientSignature.signature,
             isSignature: true,
           },
-          { label: "Sign", value: "hjames", isSignature: true },
+          { label: "Sign", value: "hmkamba", isSignature: true },
           {
             label: "Date",
             value: data.recipientSignature.date,
