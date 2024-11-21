@@ -10,8 +10,8 @@ const Page = async ({ params }) => {
         <div className="inline-block border-0 transform rotate-0 translate-z-0">
           <Image
             src="/image2.png"
-            alt=""
             width={148.83}
+            alt="logo1"
             height={56.54}
             className="inline-block"
           />
@@ -19,9 +19,9 @@ const Page = async ({ params }) => {
         <div className="inline-block border-16 border-white transform rotate-0 translate-z-0">
           <Image
             src="/image1.png"
-            alt=""
             width={131}
             height={36}
+            alt="logo 2"
             className="inline-block"
           />
         </div>
@@ -33,14 +33,14 @@ const Page = async ({ params }) => {
         This document spells out specific terms for the engagement between{" "}
         <span className="font-bold">Smart Foundry Limited</span> as an agency
         with{" "}
-        <span className="font-bold border-b-2 border-black ">
+        <span className="font-bold border-b-2 border-black">
           {data.recipient}
         </span>{" "}
         as an influencer for the purpose of being an influencer for different
         campaigns that will be done through Kwanza Media Trading Desk and
         annexed to this agreement accordingly as and when they happen.
       </p>
-      <p className="my-4 ">Influencer's social media profiles:</p>
+      <p className="my-4 ">Influencers social media profiles:</p>
       <ul className=" w-3/12 space-y-1 list-decimal list-inside">
         {data.recipientSignature.handles.map((item) => {
           return (
