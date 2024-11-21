@@ -57,7 +57,7 @@ const HorizontalBarChart = ({
         type={inputType || "bar"}
         options={config.options}
         series={config.series}
-        height={350}
+        height={250}
       />
     </div>
   );

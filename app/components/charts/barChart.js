@@ -51,7 +51,7 @@ const BarChart = ({ title, categories, data1, label1, inputType }) => {
         type={inputType || "bar"}
         options={config.options}
         series={config.series}
-        height={350}
+        height={250}
       />
     </div>
   );
