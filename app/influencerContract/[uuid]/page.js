@@ -258,11 +258,11 @@ const Page = async ({ params }) => {
           {" "}
           <p className="">
             Subject to clause 6 and Annex A of this agreement, Smart Foundry
-            Limited and the Influencer will receive a revenue share of 60:40 in
-            favor of the Influencer on client’s budget. Payment will be made in
-            arrears after the work is completed, the report is approved by the
-            client, and the relevant invoice is submitted to Smart Foundry
-            Limited
+            Limited and the Influencer will receive a revenue share of{" "}
+            {data.kwanzaPercent}:{data.influencerPercent} in favor of the
+            Influencer on client’s budget. Payment will be made in arrears after
+            the work is completed, the report is approved by the client, and the
+            relevant invoice is submitted to Smart Foundry Limited
           </p>
         </div>
       </ol>
