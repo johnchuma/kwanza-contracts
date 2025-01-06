@@ -41,14 +41,15 @@ const Page = async ({ params }) => {
         annexed to this agreement accordingly as and when they happen.
       </p>
       <p className="my-4 ">Influencers social media profiles:</p>
-      <ul className=" w-5/12 space-y-1 list-decimal list-inside">
-        {data.recipientSignature.handles.map((item) => {
+      <ul className=" w-6/12 space-y-1 ">
+        {data.recipientSignature.handles.map((item, index) => {
           return (
-            <li className="" key={item}>
-              <span className="border-b border-dashed pb-1 border-black px-2">
+            <div className=" flex space-x-1" key={item}>
+              <div>{index}.</div>
+              <div className="border-b border-dashed pb-1 border-black px-2">
                 {item}
-              </span>
-            </li>
+              </div>
+            </div>
           );
         })}
       </ul>
