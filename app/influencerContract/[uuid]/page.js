@@ -41,7 +41,7 @@ const Page = async ({ params }) => {
         annexed to this agreement accordingly as and when they happen.
       </p>
       <p className="my-4 ">Influencers social media profiles:</p>
-      <ul className=" w-6/12 space-y-1 ">
+      <div className=" w-6/12 space-y-1 ">
         {data.recipientSignature.handles.map((item, index) => {
           return (
             <div className=" flex space-x-1" key={item}>
@@ -52,7 +52,7 @@ const Page = async ({ params }) => {
             </div>
           );
         })}
-      </ul>
+      </div>
       <ol className=" list-decimal  space-y-4 pl-5 mt-6">
         <li className="">Smart Foundry Influencer Terms of Use Agreement:</li>
         <div className="space-y-3">
