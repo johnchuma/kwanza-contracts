@@ -41,7 +41,7 @@ const Page = async ({ params }) => {
         annexed to this agreement accordingly as and when they happen.
       </p>
       <p className="my-4 ">Influencers social media profiles:</p>
-      <ul className=" w-3/12 space-y-1 list-decimal list-inside">
+      <ul className=" w-5/12 space-y-1 list-decimal list-inside">
         {data.recipientSignature.handles.map((item) => {
           return (
             <li className="" key={item}>
