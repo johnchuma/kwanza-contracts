@@ -45,7 +45,7 @@ const Page = async ({ params }) => {
         {data.recipientSignature.handles.map((item, index) => {
           return (
             <div className=" flex space-x-1" key={item}>
-              <div>{index}.</div>
+              <div>{index + 1}.</div>
               <div className="border-b border-dashed pb-1 border-black px-2">
                 {item}
               </div>
