@@ -6,7 +6,7 @@ const Page = async ({ params }) => {
   const data = response.data.body;
   console.log(data);
   return (
-    <div className="bg-white  max-w-4xl mx-auto min-h-screen flex flex-col justify-center text-black">
+    <div className="bg-white  max-w-4xl mx-auto min-h-screen flex flex-col justify-start pt-4 text-black">
       <div className="flex justify-between">
         <div className="inline-block border-0 transform rotate-0 translate-z-0">
           <Image
