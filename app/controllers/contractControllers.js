@@ -5,5 +5,8 @@ export const app = axios.create({
 });
 
 export const getContract = async (uuid) => {
-  return await app.get(`/contracts/${uuid}`, {});
+  return await app.get(`/contracts/${uuid}`);
+};
+export const getAnnex = async (uuid) => {
+  return await app.get(`/annexes/${uuid}`);
 };
