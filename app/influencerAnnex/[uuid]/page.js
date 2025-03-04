@@ -32,7 +32,7 @@ const Page = async ({ params }) => {
         <div className="w-4/12  border-1 border-r border-gray-400 p-2 font-bold ">
           <h1>Name of the Client</h1>
         </div>
-        <div className="w-8/12 border-1 border-gray-400 p-2 ">
+        <div className="w-8/12 border-1 border-gray-400 border-r  p-2 ">
           <p>{data.Contract.recipient}</p>
         </div>
       </div>
@@ -40,7 +40,7 @@ const Page = async ({ params }) => {
         <div className="w-4/12 border-t-transparent border-r border-1 border-gray-400 p-2 font-bold">
           <h1>Name of the Campaign</h1>
         </div>
-        <div className="w-8/12 border-t-transparent border-1 border-gray-400 p-2">
+        <div className="w-8/12 border-t-transparent border-1 border-r  border-gray-400 p-2">
           {data.campaign}
         </div>
       </div>
@@ -51,7 +51,7 @@ const Page = async ({ params }) => {
         <div className="w-6/12 border-t-transparent border-r border-1 border-gray-400 p-2 font-bold">
           <h1>Influencer spacific dutes</h1>
         </div>
-        <div className="w-2/12 border-t-transparent border-1 border-gray-400 p-2  font-bold">
+        <div className="w-2/12 border-t-transparent border-1 border-r  border-gray-400 p-2  font-bold">
           <h1>Client Budget</h1>
         </div>
       </div>
@@ -72,7 +72,7 @@ const Page = async ({ params }) => {
             <li key={item}>{item}</li>
           ))}
         </div>
-        <div className="w-2/12 border-t-transparent border-1 border-gray-400 p-2">
+        <div className="w-2/12 border-t-transparent border-1 border-r  border-gray-400 p-2">
           TZS {data.budget.toLocaleString()}
         </div>
       </div>
