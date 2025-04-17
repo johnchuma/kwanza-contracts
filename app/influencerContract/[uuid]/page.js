@@ -18,7 +18,7 @@ const Page = async ({ params }) => {
         </div>
         <div className="inline-block border-16 border-white transform rotate-0 translate-z-0">
           <Image
-            src="/image1.png"
+            src="/logo.svg"
             width={131}
             height={36}
             alt="logo 2"
@@ -37,8 +37,8 @@ const Page = async ({ params }) => {
           {data.recipient}
         </span>{" "}
         as an influencer for the purpose of being an influencer for different
-        campaigns that will be done through Kwanza Media Trading Desk and
-        annexed to this agreement accordingly as and when they happen.
+        campaigns that will be done through Adflow and annexed to this agreement
+        accordingly as and when they happen.
       </p>
       <p className="my-4 ">Influencers social media profiles:</p>
       <div className=" w-6/12 space-y-1 pl-6 ">
@@ -58,7 +58,7 @@ const Page = async ({ params }) => {
         <div className="space-y-3">
           <p className="">
             Welcome to the Smart Foundry Limited Influencer Program. The term
-            “Smart Foundry” or “Kwanza” or “us” or “we” or “our” refers to Smart
+            “Smart Foundry” or “Adflow” or “us” or “we” or “our” refers to Smart
             Foundry Limited. The term “you” or “Influencer” or “content creator”
             or “manager” or “representative” refers to the individual who is
             hired to be influencer and/or officially representing influencer(s).
@@ -119,7 +119,7 @@ const Page = async ({ params }) => {
             4.1 As an Influencer and in the performance of any activity(s),
             influencer represent and warrant that, in addition to the
             Restrictions and Prohibitions on Use in Smart Foundry General Terms
-            of Use which will be on (kwanza.co.tz), influencer will comply with
+            of Use which will be on (adflow.africa), influencer will comply with
             all of the following rules of conduct:
           </p>
           <ol className="">4.1.1 Postings</ol>
@@ -231,7 +231,7 @@ const Page = async ({ params }) => {
               expectations.
             </li>
             <li className="">
-              vii. Upgrade and maintain Kwanza digital platform.
+              vii. Upgrade and maintain Adflow digital platform.
             </li>
           </ol>
         </div>

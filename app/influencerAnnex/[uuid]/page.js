@@ -19,7 +19,7 @@ const Page = async ({ params }) => {
         </div>
         <div className="inline-block border-16 border-white transform rotate-0 translate-z-0">
           <Image
-            src="/image1.png"
+            src="/logo.svg"
             width={131}
             height={36}
             alt="logo 2"
