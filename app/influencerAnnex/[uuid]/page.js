@@ -8,15 +8,6 @@ const Page = async ({ params }) => {
   return (
     <div className="bg-white  max-w-4xl mx-auto min-h-screen flex flex-col justify-start pt-4 text-black">
       <div className="flex justify-between">
-        <div className="inline-block border-0 transform rotate-0 translate-z-0">
-          <Image
-            src="/image2.png"
-            width={148.83}
-            alt="logo1"
-            height={56.54}
-            className="inline-block"
-          />
-        </div>
         <div className="inline-block border-16 border-white transform rotate-0 translate-z-0">
           <Image
             src="/logo.svg"
@@ -125,12 +116,12 @@ const Page = async ({ params }) => {
       </div>
 
       <div className="text-center mt-8">
-        <p className="text-yellow-500">
-          Smart Foundry Limited I P.O. Box 79375 I Dar es Salaam I Tanzania I
+        <p className="text-[#00b86b]">
+          AdFlow Africa Limited I P.O. Box 79375 I Dar es Salaam I Tanzania I
           +255 22 277 5801 I
         </p>
-        <p className="text-yellow-500">info@smartfoundry.co</p>
-        <p className="text-yellow-500">www.smartfoundry.co</p>
+        <p className="text-[#00b86b]">info@adflow.africa</p>
+        <p className="text-[#00b86b]">www.adflow.africa</p>
         <div className="inline-block border-0 transform rotate-0 translate-z-0"></div>
       </div>
     </div>

@@ -7,15 +7,6 @@ const Page = async ({ params }) => {
   return (
     <div className="bg-white  max-w-4xl mx-auto  text-black">
       <div className="flex justify-between">
-        <div className="inline-block border-0 transform rotate-0 translate-z-0">
-          <Image
-            src="/image2.png"
-            width={148.83}
-            alt="logo1"
-            height={56.54}
-            className="inline-block"
-          />
-        </div>
         <div className="inline-block border-16 border-white transform rotate-0 translate-z-0">
           <Image
             src="/logo.svg"
@@ -27,11 +18,11 @@ const Page = async ({ params }) => {
         </div>
       </div>
       <p className="text-center font-bold mt-4">
-        Smart Foundry Limited Influencer’s Terms of Use Agreement
+        AdFlow Africa Limited Influencer’s Terms of Use Agreement
       </p>
       <p className="mt-4">
         This document spells out specific terms for the engagement between{" "}
-        <span className="font-bold">Smart Foundry Limited</span> as an agency
+        <span className="font-bold">AdFlow Africa Limited</span> as an agency
         with{" "}
         <span className="font-bold border-b-2 border-black">
           {data.recipient}
@@ -54,17 +45,18 @@ const Page = async ({ params }) => {
         })}
       </div>
       <ol className=" list-decimal  space-y-4 pl-5 mt-6">
-        <li className="">Smart Foundry Influencer Terms of Use Agreement:</li>
+        <li className="">AdFlow Africa Influencer Terms of Use Agreement:</li>
         <div className="space-y-3">
           <p className="">
-            Welcome to the Smart Foundry Limited Influencer Program. The term
-            “Smart Foundry” or “Adflow” or “us” or “we” or “our” refers to Smart
-            Foundry Limited. The term “you” or “Influencer” or “content creator”
-            or “manager” or “representative” refers to the individual who is
-            hired to be influencer and/or officially representing influencer(s).
+            Welcome to the AdFlow Africa Limited Influencer Program. The term
+            “AdFlow Influencer” or “AdFlow Affiliate” or “Adflow” or “us” or
+            “we” or “our” refers to Smart Foundry Limited. The term “you” or
+            “Influencer” or “content creator” or “manager” or “representative”
+            refers to the individual who is hired to be influencer and/or
+            officially representing influencer(s).
           </p>
           <p className="">
-            Smart Foundry Limited provides creators management services to its
+            AdFlow Africa Limited provides creators management services to its
             clients (“Clients”) by engaging Influencers to post client-related
             content on Influencers’ personal social media accounts. Each
             marketing campaign for a client is called a “Campaign.”
@@ -79,8 +71,8 @@ const Page = async ({ params }) => {
         <div className="space-y-3">
           <p className="">
             2.1 By accepting to be an Influencer and/or accepting advertising
-            assignment from Smart Foundry Limited, you agree to comply with and
-            be bound by the terms and conditions outlined in this Smart Foundry
+            assignment from AdFlow Africa Limited, you agree to comply with and
+            be bound by the terms and conditions outlined in this AdFlow Africa
             Limited Influencer Terms of Use Agreement (“Agreement”) as well as
             the general Terms of Use governing the campaign.
           </p>
@@ -90,7 +82,7 @@ const Page = async ({ params }) => {
             take effect upon your notice of such amendment. If we notify you of
             any change to this Agreement that you do not accept, this contract
             shall immediately be terminated, along with any other engagement you
-            have with Smart Foundry Limited as an influencer
+            have with AdFlow Africa Limited as an influencer
           </p>
         </div>
         <li className="">Influencer-Created Intellectual Property.</li>
@@ -105,7 +97,7 @@ const Page = async ({ params }) => {
             will create or be posted on your social media accounts.
           </p>
           <p className="">
-            3.2 You hereby acknowledge and agrees that Smart Foundry Limited and
+            3.2 You hereby acknowledge and agrees that AdFlow Africa Limited and
             their clients is and shall be the sole owner of all right, title and
             interest to any and all Influencer Content perpetually (such
             assigned Influencer Content is referred to as the “Work Product”),
@@ -118,7 +110,7 @@ const Page = async ({ params }) => {
           <p className="">
             4.1 As an Influencer and in the performance of any activity(s),
             influencer represent and warrant that, in addition to the
-            Restrictions and Prohibitions on Use in Smart Foundry General Terms
+            Restrictions and Prohibitions on Use in AdFlow Africa General Terms
             of Use which will be on (adflow.africa), influencer will comply with
             all of the following rules of conduct:
           </p>
@@ -126,12 +118,12 @@ const Page = async ({ params }) => {
           <p className="">
             Influencer’s social media posts related to this contract will comply
             with the specifications set forth in the contract duties and its
-            annexes and any subsequent directions from Smart Foundry regarding
+            annexes and any subsequent directions from AdFlow Africa regarding
             the contact.
           </p>
           <p className="">
             Influencer will not post anything on any social media account or on
-            any other platform or media to disparage either Smart Foundry or any
+            any other platform or media to disparage either AdFlow Africa or any
             Client you are currently working for or you have performed any
             activity for.
           </p>
@@ -148,7 +140,7 @@ const Page = async ({ params }) => {
             <li className="">4.1.2 Disclaimer of Warranty</li>
           </ol>
           <p className="">
-            Smart Foundry Limited provides the influencer program and duties to
+            AdFlow Africa Limited provides the influencer program and duties to
             you “as-is” without any warranties or representations of any kind,
             whether statutory, express or implied, including but not limited to,
             warranties of title, no infringement, merchantability, fitness for a
@@ -159,7 +151,7 @@ const Page = async ({ params }) => {
             <li className="">4.1.3 Limitation of Liability</li>
           </ol>
           <p className="">
-            Smart Foundry Limited and any affiliated party shall not be liable
+            AdFlow Africa Limited and any affiliated party shall not be liable
             for any loss, injury, claim, liability, or damage of any kind
             resulting in any way from influencer’s performing her/his duties or
             any violation by a client in the course of performing your job.
@@ -170,13 +162,13 @@ const Page = async ({ params }) => {
           <p className="">
             In the performance of the parties’ duties and obligations under this
             Agreement, it is mutually understood and agreed that Influencer is
-            and will be an independent contractor of Smart Foundry Limited
+            and will be an independent contractor of AdFlow Africa Limited
             and/or the Client. Nothing in this Agreement shall be construed as
             creating a partnership or joint venture between you and Smart
-            Foundry, you and a Client, or Smart Foundry Limited and a Client.
+            Foundry, you and a Client, or AdFlow Africa Limited and a Client.
             This is a contract for the purpose of amplifying the campaign
             messages and at no point should the influencer portray themselves as
-            a Representative of Smart Foundry Limited or its clients.
+            a Representative of AdFlow Africa Limited or its clients.
           </p>
           <ol className="">
             <li className="">4.1.5 Termination of Contract</li>
@@ -184,7 +176,7 @@ const Page = async ({ params }) => {
           <p className="">
             In the event the influencer breaches any terms stipulated in this
             agreement and fail to correct within a period of 5 days to Smart
-            Foundry Limited and its client’s satisfaction, Smart Foundry Limited
+            Foundry Limited and its client’s satisfaction, AdFlow Africa Limited
             will terminate the agreement by giving the influencer written
             notice. The influencer will incur the value of revenue loss for the
             remaining period of the assignment.
@@ -192,7 +184,7 @@ const Page = async ({ params }) => {
         </div>
         <li className="">Confidentiality clause:</li>
         <p className="">
-          You must not, without the prior written permission of Smart Foundry
+          You must not, without the prior written permission of AdFlow Africa
           Limited, at any time during your appointment, or after it has ended,
           make or permit any unauthorized use or unauthorized disclosure or any
           information which concerns the work, affairs or objects of the
@@ -204,7 +196,7 @@ const Page = async ({ params }) => {
         </p>
         <li className="">Parties Duties.</li>
         <div>
-          <p className="">6.1 Smart Foundry Limited:</p>
+          <p className="">6.1 AdFlow Africa Limited:</p>
           <ol className=" list-item list-inside space-y-3 pl-4">
             <li className="">
               i. Prepare final reports which shall be sent to respective
@@ -250,7 +242,7 @@ const Page = async ({ params }) => {
               of engagement.
             </li>
             <li className="">
-              iv. Share high level report to Smart Foundry accordingly.
+              iv. Share high level report to AdFlow Africa accordingly.
             </li>
           </ol>
         </div>
@@ -258,12 +250,12 @@ const Page = async ({ params }) => {
         <div>
           {" "}
           <p className="">
-            Subject to clause 6 and Annex A of this agreement, Smart Foundry
+            Subject to clause 6 and Annex A of this agreement, AdFlow Africa
             Limited and the Influencer will receive a revenue share of{" "}
             {data.kwanzaPercent}:{data.influencerPercent} in favor of the
             Influencer on client’s budget. Payment will be made in arrears after
             the work is completed, the report is approved by the client, and the
-            relevant invoice is submitted to Smart Foundry Limited
+            relevant invoice is submitted to AdFlow Africa Limited
           </p>
         </div>
       </ol>
@@ -312,12 +304,12 @@ const Page = async ({ params }) => {
       </div>
 
       <div className="text-center mt-8">
-        <p className="text-yellow-500">
-          Smart Foundry Limited I P.O. Box 79375 I Dar es Salaam I Tanzania I
+        <p className="text-[#00b86b]">
+          AdFlow Africa Limited I P.O. Box 79375 I Dar es Salaam I Tanzania I
           +255 22 277 5801 I
         </p>
-        <p className="text-yellow-500">info@smartfoundry.co</p>
-        <p className="text-yellow-500">www.smartfoundry.co</p>
+        <p className="text-[#00b86b]">info@adflow.africa</p>
+        <p className="text-[#00b86b]">www.adflow.africa</p>
         <div className="inline-block border-0 transform rotate-0 translate-z-0"></div>
       </div>
     </div>
