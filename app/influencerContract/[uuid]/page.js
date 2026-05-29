@@ -50,7 +50,7 @@ const Page = async ({ params }) => {
           <p className="">
             Welcome to the AdFlow Africa Limited Influencer Program. The term
             “AdFlow Influencer” or “AdFlow Affiliate” or “Adflow” or “us” or
-            “we” or “our” refers to Smart Foundry Limited. The term “you” or
+            “we” or “our” refers to AdFlow Africa Limited. The term “you” or
             “Influencer” or “content creator” or “manager” or “representative”
             refers to the individual who is hired to be influencer and/or
             officially representing influencer(s).
@@ -306,7 +306,7 @@ const Page = async ({ params }) => {
       <div className="text-center mt-8">
         <p className="text-[#00b86b]">
           AdFlow Africa Limited I P.O. Box 79375 I Dar es Salaam I Tanzania I
-          +255 22 277 5801 I
+          +255 747 837 838 I
         </p>
         <p className="text-[#00b86b]">info@adflow.africa</p>
         <p className="text-[#00b86b]">www.adflow.africa</p>

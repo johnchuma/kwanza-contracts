@@ -47,12 +47,12 @@ const Page = async ({ params }) => {
         </div>
       </div>
       <div className="border border-t-transparent border-r border-gray-400 flex">
-        <div className="w-4/12 border-t-transparent border-1 border-r border-gray-400 p-2">
+        <div className="w-4/12 border-t-transparent border-1 border-r border-gray-400 p-2 overflow-hidden">
           <ol className="flex flex-col max-w-auto list-decimal list list-inside ">
             {data.recipientSignature.handles.map((item, index) => {
               return (
                 <li key={index} className="flex items-center space-x-2">
-                  <p className="text-sm text-muted">{item}</p>
+                  <p className="text-sm text-muted break-all">{item}</p>
                 </li>
               );
             })}
