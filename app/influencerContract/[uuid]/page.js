@@ -2,7 +2,24 @@ import Image from "next/image";
 import { getContract } from "../../controllers/contractControllers";
 
 const Page = async ({ params }) => {
-  const response = await getContract(params.uuid);
+  const resolvedParams = await params;
+  const uuid = resolvedParams?.uuid ?? "";
+  const isValidUuid =
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(
+      uuid,
+    );
+
+  if (!isValidUuid) {
+    return (
+      <div className="bg-white max-w-4xl mx-auto min-h-screen flex items-center justify-center text-black p-6">
+        <p className="text-center text-lg font-semibold">
+          Invalid contract link. Please check the UUID and try again.
+        </p>
+      </div>
+    );
+  }
+
+  const response = await getContract(uuid);
   const data = response?.data?.body ?? null;
 
   if (!data) {

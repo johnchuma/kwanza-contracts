@@ -12,7 +12,8 @@ import { getTiktokCampaign } from "../../controllers/reportControllers";
 import Image from "next/image";
 
 const Page = async ({ params }) => {
-  const res = await getTiktokCampaign(params.uuid);
+  const resolvedParams = await params;
+  const res = await getTiktokCampaign(resolvedParams?.uuid);
   const data = res.data.body;
 
   return (
@@ -76,10 +77,10 @@ const Page = async ({ params }) => {
                 <HorizontalBarChart
                   chartType={"bar"}
                   data1={Object.values(
-                    data.TiktokCampaignReport.audienceAgePercent
+                    data.TiktokCampaignReport.audienceAgePercent,
                   ).map((item) => parseInt(item))}
                   categories={Object.keys(
-                    data.TiktokCampaignReport.audienceAgePercent
+                    data.TiktokCampaignReport.audienceAgePercent,
                   )}
                   label1={"Age"}
                 />
@@ -93,10 +94,10 @@ const Page = async ({ params }) => {
               <div className="mt-2">
                 <DonutChart
                   data={Object.values(
-                    data.TiktokCampaignReport.audienceGenderPercent
+                    data.TiktokCampaignReport.audienceGenderPercent,
                   ).map((item) => parseInt(item))}
                   labels={Object.keys(
-                    data.TiktokCampaignReport.audienceGenderPercent
+                    data.TiktokCampaignReport.audienceGenderPercent,
                   )}
                 />
               </div>
@@ -112,10 +113,10 @@ const Page = async ({ params }) => {
                 <BarChart
                   chartType={"bar"}
                   data1={Object.values(
-                    data.TiktokCampaignReport.audienceRegionPercent
+                    data.TiktokCampaignReport.audienceRegionPercent,
                   ).map((item) => parseInt(item))}
                   categories={Object.keys(
-                    data.TiktokCampaignReport.audienceRegionPercent
+                    data.TiktokCampaignReport.audienceRegionPercent,
                   )}
                   label1={"Audience"}
                 />
