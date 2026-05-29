@@ -3,7 +3,24 @@ import { getContract } from "../../controllers/contractControllers";
 
 const Page = async ({ params }) => {
   const response = await getContract(params.uuid);
-  const data = response.data.body;
+  const data = response?.data?.body ?? null;
+
+  if (!data) {
+    return (
+      <div className="bg-white max-w-4xl mx-auto min-h-screen flex items-center justify-center text-black p-6">
+        <p className="text-center text-lg font-semibold">
+          Contract not found for this link.
+        </p>
+      </div>
+    );
+  }
+
+  const recipient = data.recipient ?? data.Contract?.recipient ?? "N/A";
+  const handles = data.recipientSignature?.handles ?? [];
+  const signature = data.recipientSignature?.signature ?? "";
+  const signatureDate = data.recipientSignature?.date ?? "";
+  const kwanzaPercent = data.kwanzaPercent ?? "-";
+  const influencerPercent = data.influencerPercent ?? "-";
   return (
     <div className="bg-white  max-w-4xl mx-auto  text-black">
       <div className="flex justify-between">
@@ -24,16 +41,14 @@ const Page = async ({ params }) => {
         This document spells out specific terms for the engagement between{" "}
         <span className="font-bold">AdFlow Africa Limited</span> as an agency
         with{" "}
-        <span className="font-bold border-b-2 border-black">
-          {data.recipient}
-        </span>{" "}
+        <span className="font-bold border-b-2 border-black">{recipient}</span>{" "}
         as an influencer for the purpose of being an influencer for different
         campaigns that will be done through Adflow and annexed to this agreement
         accordingly as and when they happen.
       </p>
       <p className="my-4 ">Influencers social media profiles:</p>
       <div className=" w-6/12 space-y-1 pl-6 ">
-        {data.recipientSignature.handles.map((item, index) => {
+        {handles.map((item, index) => {
           return (
             <div className=" flex space-x-1" key={item}>
               <div>{index + 1}.</div>
@@ -252,32 +267,32 @@ const Page = async ({ params }) => {
           <p className="">
             Subject to clause 6 and Annex A of this agreement, AdFlow Africa
             Limited and the Influencer will receive a revenue share of{" "}
-            {data.kwanzaPercent}:{data.influencerPercent} in favor of the
-            Influencer on client’s budget. Payment will be made in arrears after
-            the work is completed, the report is approved by the client, and the
-            relevant invoice is submitted to AdFlow Africa Limited
+            {kwanzaPercent}:{influencerPercent} in favor of the Influencer on
+            client’s budget. Payment will be made in arrears after the work is
+            completed, the report is approved by the client, and the relevant
+            invoice is submitted to AdFlow Africa Limited
           </p>
         </div>
       </ol>
 
       <div className="mt-10 grid grid-cols-2 gap-6">
         {[
-          { label: "Signed By", value: data.recipient, isSignature: false },
+          { label: "Signed By", value: recipient, isSignature: false },
           { label: "Signed By", value: "Herman Mkamba", isSignature: false },
           {
             label: "Sign",
-            value: data.recipientSignature.signature,
+            value: signature,
             isSignature: true,
           },
           { label: "Sign", value: "hmkamba", isSignature: true },
           {
             label: "Date",
-            value: data.recipientSignature.date,
+            value: signatureDate,
             isSignature: false,
           },
           {
             label: "Date",
-            value: data.recipientSignature.date,
+            value: signatureDate,
             isSignature: false,
           },
         ].map((item, index) => {

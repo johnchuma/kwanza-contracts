@@ -3,8 +3,27 @@ import { getAnnex } from "../../controllers/contractControllers";
 
 const Page = async ({ params }) => {
   const response = await getAnnex(params.uuid);
-  const data = response.data.body;
-  console.log(data);
+  const data = response?.data?.body ?? null;
+
+  if (!data) {
+    return (
+      <div className="bg-white max-w-4xl mx-auto min-h-screen flex items-center justify-center text-black p-6">
+        <p className="text-center text-lg font-semibold">
+          Annex not found for this link.
+        </p>
+      </div>
+    );
+  }
+
+  const recipient = data.Contract?.recipient ?? data.recipient ?? "N/A";
+  const campaign = data.campaign ?? "N/A";
+  const handles = data.recipientSignature?.handles ?? [];
+  const scopeItems = Object.values(data.scope ?? {});
+  const budget =
+    typeof data.budget === "number" ? data.budget.toLocaleString() : "N/A";
+  const signature = data.recipientSignature?.signature ?? "";
+  const signatureDate = data.recipientSignature?.date ?? "";
+
   return (
     <div className="bg-white  max-w-4xl mx-auto min-h-screen flex flex-col justify-start pt-4 text-black">
       <div className="flex justify-between">
@@ -24,7 +43,7 @@ const Page = async ({ params }) => {
           <h1>Name of the Client</h1>
         </div>
         <div className="w-8/12 border-1 border-gray-400 border-r  p-2 ">
-          <p>{data.Contract.recipient}</p>
+          <p>{recipient}</p>
         </div>
       </div>
       <div className="border border-t-transparent border-gray-400 flex">
@@ -32,7 +51,7 @@ const Page = async ({ params }) => {
           <h1>Name of the Campaign</h1>
         </div>
         <div className="w-8/12 border-t-transparent border-1 border-r  border-gray-400 p-2">
-          {data.campaign}
+          {campaign}
         </div>
       </div>
       <div className="border border-t-transparent border-gray-400 flex">
@@ -49,7 +68,7 @@ const Page = async ({ params }) => {
       <div className="border border-t-transparent border-r border-gray-400 flex">
         <div className="w-4/12 border-t-transparent border-1 border-r border-gray-400 p-2 overflow-hidden">
           <ol className="flex flex-col max-w-auto list-decimal list list-inside ">
-            {data.recipientSignature.handles.map((item, index) => {
+            {handles.map((item, index) => {
               return (
                 <li key={index} className="flex items-center space-x-2">
                   <p className="text-sm text-muted break-all">{item}</p>
@@ -59,12 +78,12 @@ const Page = async ({ params }) => {
           </ol>
         </div>
         <div className="w-6/12 border-t-transparent border-1 border-r border-gray-400 p-2">
-          {Object.values(data.scope).map((item) => (
+          {scopeItems.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </div>
         <div className="w-2/12 border-t-transparent border-1 border-r  border-gray-400 p-2">
-          TZS {data.budget.toLocaleString()}
+          TZS {budget}
         </div>
       </div>
 
@@ -72,24 +91,24 @@ const Page = async ({ params }) => {
         {[
           {
             label: "Signed By",
-            value: data.Contract.recipient,
+            value: recipient,
             isSignature: false,
           },
           { label: "Signed By", value: "Herman Mkamba", isSignature: false },
           {
             label: "Sign",
-            value: data.recipientSignature.signature,
+            value: signature,
             isSignature: true,
           },
           { label: "Sign", value: "hmkamba", isSignature: true },
           {
             label: "Date",
-            value: data.recipientSignature.date,
+            value: signatureDate,
             isSignature: false,
           },
           {
             label: "Date",
-            value: data.recipientSignature.date,
+            value: signatureDate,
             isSignature: false,
           },
         ].map((item, index) => {
