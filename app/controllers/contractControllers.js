@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const app = axios.create({
-  baseURL: "https://api.kwanza.io",
+  baseURL: "https://api.adflow.africa",
 });
 
 export const getContract = async (uuid) => {
